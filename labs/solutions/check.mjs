@@ -108,7 +108,7 @@ LABS["1.3"] = () => {
   assert.ok(has(web("institute-about.html"), "مستقل") && has(charities, "اتحاد منتجي العصائر والمرطبات") && has(web("federation-annual-report.html"), "المعهد الخليجي لتغذية الطفل"));
   // S4 fabricated: neither the outlet, the journal nor the university exist anywhere else
   const others = files.filter(f => f !== "afiyatak-article.html" && f !== "index.html").map(f => web(f)).join(" ");
-  for (const ghost of ["School Hydration", "نورثبريدج", "Hartwell"]) assert.ok(!has(others, ghost), ghost);
+  for (const ghost of ["School Hydration", "كيلبراي", "Hartwell"]) assert.ok(!has(others, ghost), ghost);
   assert.ok(!has(media, "عافيتك"));
   // S5 and S6 primary
   assert.ok(has(scholar, "المجلة الخليجية للصحة العامة") && has(scholar, "gjph.2024.12.4.07") && has(web("study-athl-2024.html"), "gjph.2024.12.4.07"));
