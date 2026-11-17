@@ -9,7 +9,7 @@
     "ar": "البحث والتحقق بالذكاء الاصطناعي",
     "en": "Research and Verification with AI"
   },
-  "tagline": "REPLACE: سطر واحد تحت العنوان: ما يستطيع المشارك فعله بعد المقرر",
+  "tagline": "تبحث بأدوات الذكاء الاصطناعي، ثم تقف خلف كل ادعاء تنقله: موجز قبل البحث، وفحص بحسب نوع الادعاء، ومصدر أصلي فتحته وقرأته، وسجل بما تحققت منه",
   "description": "يجري المشاركون أبحاثًا بأدوات الذكاء الاصطناعي، ويتدربون على تحمل المسؤولية عن كل ادعاء ينقلونه. يكتبون موجز بحث، ويصنفون الادعاءات الواردة في تقرير مولَّد بالذكاء الاصطناعي بحسب نوعها، ويقرؤون قراءة جانبية للحكم على المصادر غير المألوفة، ويتتبعون الإحصاءات والاقتباسات إلى أصلها، ويدققون الاستشهادات من حيث وجودها ودعمها للادعاء، ويختبرون مدى دعم المقطع المستشهد به لإجابات دفتر مستند إلى المصادر. ويختمون بموجز متحقق منه عن سؤال من عملهم، مبني على مصادر عامة، مع سجل تحقق وإفادة بدرجة الثقة في كل نتيجة رئيسية.",
   "track": "fluency",
   "level": 200,
@@ -62,8 +62,8 @@
     }
   ],
   "case_study": {
-    "name": "REPLACE: اسم الجهة الافتراضية التي تعمل عليها كل المختبرات",
-    "summary": "REPLACE: جملتان عن دراسة الحالة وبياناتها الاصطناعية"
+    "name": "هيئة غِراس للصحة المدرسية",
+    "summary": "هيئة غِراس للصحة المدرسية جهة عامة افتراضية تشرف على 1,240 مقصفًا مدرسيًا. سؤال السياسة الاصطناعي الذي تعمل عليه كل المختبرات: هل توصي الهيئة بقصر مشروبات المقاصف على الماء والحليب غير المحلّى؟ ملفات المختبرات: مذكرة السؤال، وتقرير بحث معمق من المساعد «مُنقِّب» فيه 20 ادعاءً، وشبكة تدريبية مغلقة من 20 صفحة فيها ثمانية مصادر متفاوتة الجودة، وإجابة فيها 12 استشهادًا تُدقَّق على السجلات العلمية الحقيقية، وعشرة مستندات عامة اصطناعية مع عشرين سؤال اختبار وإجابات مسجلة من الدفتر «رَفّ». كل ما يخص الهيئة اصطناعي ومولّد ببذرة ثابتة، والأخطاء مزروعة عمدًا ولها مفتاح إجابة للمدرب."
   },
   "format": "workshop",
   "format_note": "ورشة عمل: يومان في كل منهما أربع جلسات، مع مختبر مدته 25 دقيقة في كل جلسة، إضافة إلى مهمة بحثية متعقَّبة وفحص مباشر بالعينة",
@@ -79,130 +79,356 @@
     {
       "id": "day1",
       "kind": "day",
-      "title": "REPLACE: موضوع هذه الوحدة في كلمات قليلة",
+      "title": "قبل البحث وأثناءه: الموجز والادعاءات والمصادر",
       "deck": "slides/day1.html",
       "sessions": [
         {
-          "title": "REPLACE: عنوان الجلسة 1",
+          "title": "موجز البحث قبل أي بحث",
+          "summary": "السؤال والنطاق والقرار والموعد، وما يُعد دليلًا لهذا السؤال، وخطة بحث بالعربية والإنجليزية",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تصوغ سؤال بحث يمكن الإجابة عنه، وتربطه بالقرار وصاحبه وموعده",
+            "تحدد ما يُعد دليلًا لهذا السؤال وما يُستبعد قبل أن تبدأ البحث",
+            "تكتب خطة بحث بالعربية والإنجليزية، ومنها المصادر العربية"
           ],
-          "lo": [],
+          "lo": [
+            "LO1"
+          ],
           "lab": {
             "id": "1.1",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 1.1",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "موجز بحث لسؤال هيئة غِراس",
+            "summary": "تصلح مسودة موجز ضعيفة لسؤال المقاصف حتى تستوفي قائمة التحقق ذات النقاط الخمس، والمساعد يسألك عن النطاق ولا يكتب عنك",
             "minutes": 25,
-            "href": "D1_1.html"
+            "href": "D1_1_research_brief.html",
+            "steps": [
+              {
+                "text": "اقرأ مذكرة السؤال والمسودة الضعيفة، وعلّم ما ينقصها على قائمة النقاط الخمس",
+                "minutes": 5
+              },
+              {
+                "text": "أعد كتابة السؤال والنطاق والقرار والموعد",
+                "minutes": 6
+              },
+              {
+                "text": "اكتب معايير المصادر: ما يُعد دليلًا وما يُستبعد",
+                "minutes": 5
+              },
+              {
+                "text": "اكتب خطة البحث بالعربية والإنجليزية",
+                "minutes": 4
+              },
+              {
+                "text": "دع المساعد يسألك عن النطاق، ثم بادل موجزك مع زميل على القائمة",
+                "minutes": 5
+              }
+            ],
+            "stretch": "اكتب للسؤال نفسه موجزًا ثانيًا لقرار مختلف: حملة توعية بدل قرار منع، ولاحظ ما تغيّر في معايير المصادر"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 2",
+          "title": "أنواع الادعاءات وفحص كل نوع",
+          "summary": "ستة أنواع: الحقيقة والإحصائية والادعاء السببي والاقتباس والقاعدة والتوقع، ولكل نوع فحصه، والمصدر الأولي والثانوي",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تميّز الأنواع الستة للادعاءات في نص مولَّد",
+            "تختار لكل نوع الفحص الذي يحتاج إليه والمصدر الأولي الذي يُرجع إليه",
+            "تفكّ الجملة المركبة إلى ادعاءاتها قبل أن تفحصها"
           ],
-          "lo": [],
+          "lo": [
+            "LO2"
+          ],
           "lab": {
             "id": "1.2",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 1.2",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "جدول الادعاءات العشرين",
+            "summary": "تصنّف الادعاءات العشرين في تقرير «مُنقِّب» بحسب نوعها، وتكتب الفحص المخطط له لكل ادعاء، ثم تقارن جدولك بالمرجع",
             "minutes": 25,
-            "href": "D1_2.html"
+            "href": "D1_2_claim_table.html",
+            "steps": [
+              {
+                "text": "اقرأ التقرير مرة واحدة دون توقف، ثم افتح جدول الادعاءات",
+                "minutes": 3
+              },
+              {
+                "text": "صنّف الادعاءات من 1 إلى 10 واكتب الفحص المخطط له لكل منها",
+                "minutes": 9
+              },
+              {
+                "text": "صنّف الادعاءات من 11 إلى 20 واكتب الفحص المخطط له لكل منها",
+                "minutes": 8
+              },
+              {
+                "text": "قارن جدولك بالمرجع، وعدّ المطابق، وناقش ادعاءً واحدًا اختلفت فيه",
+                "minutes": 5
+              }
+            ],
+            "stretch": "اطلب من مساعد أن يصنّف الادعاءات العشرين، وقارن تصنيفه بالمرجع: في أي الأنواع أخطأ؟"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 3",
+          "title": "القراءة الجانبية",
+          "summary": "غادر الصفحة لتحكم عليها: من يقف خلف المصدر، وماذا يقول عنه غيره، والصفحات الرسمية التي حلّ محلها أحدث",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تطبق الحركات الأربع: توقّف، وافحص المصدر، وابحث عن تغطية أفضل، وتتبّع إلى الأصل",
+            "تحكم على موقع أو مؤلف أو منبر غير مألوف بما يقوله عنه غيره لا بما يقوله عن نفسه",
+            "تكشف صفحة رسمية حلّت محلها صفحة أحدث"
           ],
-          "lo": [],
+          "lo": [
+            "LO3"
+          ],
           "lab": {
             "id": "1.3",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 1.3",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "ثمانية مصادر في الشبكة المغلقة",
+            "summary": "دون أي مساعد ذكي، تحكم على موثوقية ثمانية مصادر متفاوتة الجودة في شبكة تدريبية مغلقة، وتجد بينها الدراسة المختلقة والصفحة الرسمية الملغاة",
             "minutes": 25,
-            "href": "D1_3.html"
+            "href": "D1_3_lateral_reading.html",
+            "steps": [
+              {
+                "text": "اقرأ قاعدة الشبكة المغلقة وافتح صفحة البحث وسجل المصادر",
+                "minutes": 3
+              },
+              {
+                "text": "احكم على المصادر الثمانية: من يقف خلف كل مصدر، وماذا يقول عنه غيره",
+                "minutes": 12
+              },
+              {
+                "text": "اكتب دليل الدراسة المختلقة ودليل الصفحة الرسمية الملغاة",
+                "minutes": 6
+              },
+              {
+                "text": "قارن أحكامك مع زميل، واتفقا على المصدر الذي اختلفتما فيه",
+                "minutes": 4
+              }
+            ],
+            "stretch": "طبّق الحركات الأربع على مصدر حقيقي غير مألوف من مجال عملك في الويب المفتوح، واكتب حكمك في سطر"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 4",
+          "title": "التتبع إلى الأصل",
+          "summary": "السلسلة من الأصل إلى العنوان وما يتغير في الطريق: الرقم والنطاق والاقتباس والقاعدة والصورة، والنسخ المؤرشفة",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تتتبع إحصائية أو اقتباسًا من ناقل إلى ناقل حتى الأصل",
+            "تسمّي ما تغيّر في الطريق: الرقم أو النطاق أو درجة اليقين أو الكلمات",
+            "تستخدم النسخ المؤرشفة والبحث العكسي عن الصور لتحديد أول ظهور"
           ],
-          "lo": [],
+          "lo": [
+            "LO3"
+          ],
           "lab": {
             "id": "1.4",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 1.4",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "أصل كل مصدر من الثمانية",
+            "summary": "تكمل سجل المصادر بعمود الأصل: تتتبع رقمًا واقتباسًا وقاعدة وصورة إلى أصلها في الشبكة المغلقة، وتكتب ما تغيّر في الطريق",
             "minutes": 25,
-            "href": "D1_4.html"
+            "href": "D1_4_trace_to_origin.html",
+            "steps": [
+              {
+                "text": "افتح سجل المصادر المحكوم عليه: سجلك أو الملف البديل",
+                "minutes": 3
+              },
+              {
+                "text": "تتبّع الرقمين في المصدرين 2 و3 إلى جدوليهما الأصليين",
+                "minutes": 8
+              },
+              {
+                "text": "تتبّع الاقتباس في المصدر 8 والقاعدة في المصدر 1 بالأرشيف",
+                "minutes": 6
+              },
+              {
+                "text": "ابحث عكسيًا عن صورة المصدر 7 وحدّد أول ظهور لها",
+                "minutes": 4
+              },
+              {
+                "text": "أكمل عمود الأصل للمصادر الثمانية، واكتب ما تغيّر في الطريق",
+                "minutes": 4
+              }
+            ],
+            "stretch": "احفظ صفحة حقيقية تستشهد بها في عملك في أرشيف الويب، وضع رابط النسخة المؤرشفة في سجلك"
           }
         }
-      ]
+      ],
+      "subtitle": "تكتب موجز البحث، وتصنّف ادعاءات تقرير مولَّد، وتحكم على ثمانية مصادر، وتتتبع كل ادعاء إلى أصله"
     },
     {
       "id": "day2",
       "kind": "day",
-      "title": "REPLACE: موضوع هذه الوحدة في كلمات قليلة",
+      "title": "الاستشهادات وأدوات البحث والتقرير",
       "deck": "slides/day2.html",
       "sessions": [
         {
-          "title": "REPLACE: عنوان الجلسة 1",
+          "title": "استشهادات موجودة وتقول ما نُسب إليها",
+          "summary": "ثلاثة اختبارات بالترتيب: الوجود والنسبة والدعم، والمعرِّفات الرقمية، والمراجع المختلقة، وانحراف الاقتباس، والأوراق المسحوبة",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تحلّ المعرِّف الرقمي أو الرابط وتطابق العنوان والمؤلفين والمجلة والسنة",
+            "تقارن الادعاء بما يقوله المصدر: الرقم ودرجة اليقين ونص الاقتباس",
+            "تكشف المرجع المختلق والورقة المسحوبة والمنبر المفترس"
           ],
-          "lo": [],
+          "lo": [
+            "LO4"
+          ],
           "lab": {
             "id": "2.1",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 2.1",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "تدقيق اثني عشر استشهادًا",
+            "summary": "تدقّق الاستشهادات الاثني عشر في إجابة «مُنقِّب» على السجلات العلمية الحقيقية: هل يوجد المصدر، وهل النسبة صحيحة، وهل يدعم الادعاء",
             "minutes": 25,
-            "href": "D2_1.html"
+            "href": "D2_1_citation_audit.html",
+            "steps": [
+              {
+                "text": "اقرأ الإجابة وافتح جدول التدقيق",
+                "minutes": 3
+              },
+              {
+                "text": "اختبار الوجود: حلّ كل معرِّف رقمي أو رابط، وابحث بالعنوان عمّا لا ينحلّ",
+                "minutes": 8
+              },
+              {
+                "text": "اختبار النسبة: طابق المؤلفين والمجلة والسنة، وتحقق من حالة السحب",
+                "minutes": 5
+              },
+              {
+                "text": "اختبار الدعم: قارن الادعاء بالملخص أو الصفحة لما بقي",
+                "minutes": 7
+              },
+              {
+                "text": "عدّ السليم والمعيب، واكتب قرارك في كل استشهاد",
+                "minutes": 2
+              }
+            ],
+            "stretch": "اطلب من مساعد ثانٍ أن يدقق الاستشهادات نفسها، ثم عدّ الأخطاء المزروعة التي فاتته"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 2",
+          "title": "أدوات البحث: الوكيل والدفتر",
+          "summary": "كيف يخطط وكيل البحث المعمق وأين يخفق، والدفتر المستند إلى المصادر على مجموعة منتقاة، وما لا تعد به كلمة «مستند»",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تقرأ خطة وكيل البحث المعمق وتحدد أين يخفق",
+            "تبني دفترًا مستندًا إلى المصادر على مجموعة مستندات انتقيتها وتعرف تاريخ كل منها",
+            "تفتح المقطع المستشهد به قبل أن تعتمد إجابة الدفتر"
           ],
-          "lo": [],
+          "lo": [
+            "LO5"
+          ],
           "lab": {
             "id": "2.2",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 2.2",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "دفتر على عشرة مستندات عامة",
+            "summary": "تبني دفترًا مستندًا إلى المصادر على مستندات هيئة غِراس العشرة العامة، وتطرح عليه أسئلة الاختبار، وتحفظ كل إجابة مع المقطع الذي استشهدت به",
             "minutes": 25,
-            "href": "D2_2.html"
+            "href": "D2_2_notebook_setup.html",
+            "steps": [
+              {
+                "text": "أنشئ الدفتر، وحمّل المستندات العشرة، وتأكد من عددها",
+                "minutes": 5
+              },
+              {
+                "text": "اطرح ثلاثة أسئلة تعارف، وافتح المقطع المستشهد به في كل إجابة",
+                "minutes": 4
+              },
+              {
+                "text": "اطرح أسئلة الاختبار من 1 إلى 10، واحفظ كل إجابة مع استشهادها",
+                "minutes": 10
+              },
+              {
+                "text": "قارن إجابتين بالإجابات المسجلة للدفتر «رَفّ»",
+                "minutes": 4
+              },
+              {
+                "text": "سجّل ما فعله الدفتر بالسؤال الذي لا جواب له في المستندات",
+                "minutes": 2
+              }
+            ],
+            "stretch": "احذف المعيار الملغى من الدفتر، وأعد طرح السؤالين 4 و5: هل تغيّرت الإجابة أو استشهادها؟"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 3",
+          "title": "قياس دعم الإجابات",
+          "summary": "الإجابة والادعاء والمقطع، وثلاثة أحكام: مدعوم ومدعوم جزئيًا وغير مدعوم، والمعدل ومقامه، وشرح حالات الإخفاق",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تحكم على كل إجابة بمقارنتها بالمقطع المستشهد به لا بمعرفتك",
+            "تحسب معدل الدعم وتذكر مقامه وما لم يُحسب فيه",
+            "تشرح حالة إخفاق: ما الذي قالته الإجابة ولم يقله المقطع"
           ],
-          "lo": [],
+          "lo": [
+            "LO5"
+          ],
           "lab": {
             "id": "2.3",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 2.3",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "معدل الدعم في عشرين إجابة",
+            "summary": "تحكم على عشرين إجابة مسجلة من الدفتر «رَفّ» بمقارنتها بالمقطع المستشهد به، وتحسب معدل الدعم، وتشرح ثلاث حالات إخفاق",
             "minutes": 25,
-            "href": "D2_3.html"
+            "href": "D2_3_support_rate.html",
+            "steps": [
+              {
+                "text": "اقرأ قاعدة الأحكام الثلاثة والمثالين المحلولين",
+                "minutes": 3
+              },
+              {
+                "text": "احكم على الإجابات من 1 إلى 10 بفتح المقطع المستشهد به",
+                "minutes": 8
+              },
+              {
+                "text": "احكم على الإجابات من 11 إلى 20",
+                "minutes": 7
+              },
+              {
+                "text": "احسب معدل الدعم، واكتب مقامه",
+                "minutes": 2
+              },
+              {
+                "text": "اشرح ثلاث حالات إخفاق: ما قالته الإجابة ولم يقله المقطع",
+                "minutes": 5
+              }
+            ],
+            "stretch": "احكم على خمس من إجابات دفترك أنت في المختبر 2.2 بالقاعدة نفسها، وقارن معدله بمعدل «رَفّ»"
           }
         },
         {
-          "title": "REPLACE: عنوان الجلسة 4",
+          "title": "اكتب ما تحققت منه",
+          "summary": "سجل التحقق، وإفادات الثقة، والقيود المتبقية، والإفصاح عن الاستعانة بالذكاء الاصطناعي، وإبقاء البيانات الشخصية والمصنفة خارج أدوات البحث",
           "outcomes": [
-            "REPLACE: ما يستطيع المشارك فعله بعد هذه الجلسة؛ واذكر في lo نواتج تعلم المقرر التي تخدمها"
+            "تكتب سطر سجل تحقق لكل ادعاء: المصدر الذي فُتح، وموضع الدليل، والقرار",
+            "تكتب إفادة ثقة لكل نتيجة رئيسية، وقسمًا للقيود المتبقية، وسطر إفصاح",
+            "تنقّي طلب بحث من البيانات الشخصية والمصنفة قبل إرساله إلى أي أداة"
           ],
-          "lo": [],
+          "lo": [
+            "LO6",
+            "LO1"
+          ],
           "lab": {
             "id": "2.4",
-            "title": "REPLACE: ما يبنيه المشاركون في المختبر 2.4",
-            "summary": "REPLACE: سطر واحد عمّا يبنيه المشاركون ويخرجون به، ثم خطوات المختبر في course.json ومجموع دقائقها 25",
+            "title": "سجل التحقق وإفادات الثقة",
+            "summary": "تكمل سجل التحقق لثلاث نتائج من عمل اليومين، وتكتب إفادة ثقة لكل نتيجة وسطر الإفصاح، ثم تصوغ سؤال مشروعك الختامي",
             "minutes": 25,
-            "href": "D2_4.html"
+            "href": "D2_4_log_and_confidence.html",
+            "steps": [
+              {
+                "text": "أكمل أسطر سجل التحقق للنتائج الثلاث من السجل الجزئي",
+                "minutes": 5
+              },
+              {
+                "text": "اكتب إفادة ثقة لكل نتيجة: الدرجة وسببها وما يغيّرها",
+                "minutes": 8
+              },
+              {
+                "text": "اكتب قسم القيود المتبقية وسطر الإفصاح",
+                "minutes": 4
+              },
+              {
+                "text": "نقِّ طلب البحث من البيانات الشخصية والمصنفة",
+                "minutes": 3
+              },
+              {
+                "text": "صغ سؤال مشروعك الختامي في موجز من خمس نقاط، من مصادر عامة فقط",
+                "minutes": 5
+              }
+            ],
+            "stretch": "اطلب من زميل أن يختار ادعاءً من سجلك وتعيد التحقق منه أمامه في ثلاث دقائق"
           }
         }
-      ]
+      ],
+      "subtitle": "تدقّق اثني عشر استشهادًا، وتبني دفترًا على عشرة مستندات وتقيس دعم إجاباته، وتكتب سجل التحقق وإفادات الثقة"
+    },
+    {
+      "id": "capstone",
+      "kind": "capstone",
+      "title": "الموجز المتحقق منه والفحص المباشر بالعينة",
+      "subtitle": "فحص تحت الإشراف دون ذكاء اصطناعي، ثم عشر دقائق لكل مشارك يعيد فيها التحقق من ثلاثة ادعاءات يختارها المقيِّم",
+      "deck": "slides/capstone.html"
     }
   ],
   "labs": {
@@ -221,7 +447,7 @@
       "slot": "دفتر مستند إلى المصادر",
       "examples": [
         "مجموعات المعرفة في Open WebUI",
-        "NotebookLM",
+        "Gemini Notebook (NotebookLM سابقًا)",
         "مساحة المشاريع في مساعد معتمد"
       ]
     },
@@ -260,5 +486,205 @@
     "sessions_per_day": 4,
     "session_lab": true,
     "lab_minutes": 25
-  }
+  },
+  "capstone": {
+    "summary": "موجز بحث متحقق منه عن سؤال من عمل المشارك، مبني على مصادر عامة، مع سجل تحقق وإفادات ثقة وسطر إفصاح، يُفحص مباشرة بعينة من ثلاثة ادعاءات يختارها المقيِّم",
+    "submission": "مشروع فردي يُسلَّم رابطًا لمجلد مشترك في Google Drive، فيه: موجز البحث من صفحة واحدة، والموجز المتحقق منه بنتائجه الرئيسية وإفادة الثقة في كل نتيجة وقسم القيود المتبقية وسطر الإفصاح، وسجل التحقق الذي يسجّل كل بحث وكل جلسة مع أداة وكل ادعاء أنتجه الذكاء الاصطناعي. المصادر عامة فقط، ولا بيانات شخصية أو مصنفة في أي ملف. ثم فحص مباشر مدته عشر دقائق: ثلاث لعرض النتائج، وسبع يعيد فيها المشارك التحقق من ثلاثة ادعاءات يختارها المقيِّم من الموجز.",
+    "talk_minutes": 3,
+    "qa_minutes": 7,
+    "rubric": [
+      {
+        "criterion": "سجل التحقق: كل ادعاء مسجّل، وكل بحث وجلسة مع أداة",
+        "weight": 30
+      },
+      {
+        "criterion": "المصادر والاستشهادات: أصلية، فُتحت وقُرئت، وتدعم ما نُسب إليها",
+        "weight": 25
+      },
+      {
+        "criterion": "إفادات الثقة والقيود المتبقية",
+        "weight": 20
+      },
+      {
+        "criterion": "موجز البحث: السؤال والنطاق والقرار ومعايير المصادر",
+        "weight": 15
+      },
+      {
+        "criterion": "الإفصاح وإبقاء البيانات الشخصية والمصنفة خارج الأدوات",
+        "weight": 10
+      }
+    ]
+  },
+  "sources": [
+    {
+      "group": "دقة الاستشهادات في أدوات الذكاء الاصطناعي",
+      "items": [
+        {
+          "title": "Walters, Wilder: Fabrication and errors in the bibliographic citations generated by ChatGPT (Scientific Reports, 2023)",
+          "url": "https://doi.org/10.1038/s41598-023-41032-5"
+        },
+        {
+          "title": "Liu, Zhang, Liang: Evaluating Verifiability in Generative Search Engines (2023)",
+          "url": "https://arxiv.org/abs/2304.09848"
+        },
+        {
+          "title": "Wu et al.: An automated framework for assessing how well LLMs cite relevant medical references (Nature Communications, 2025)",
+          "url": "https://doi.org/10.1038/s41467-025-58551-6"
+        },
+        {
+          "title": "Jaźwińska, Chandrasekar: AI Search Has a Citation Problem (Columbia Journalism Review, Tow Center, 2025)",
+          "url": "https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php"
+        }
+      ]
+    },
+    {
+      "group": "القراءة الجانبية والتتبع إلى الأصل",
+      "items": [
+        {
+          "title": "Wineburg, McGrew: Lateral Reading and the Nature of Expertise (Teachers College Record, 2019)",
+          "url": "https://doi.org/10.1177/016146811912101102"
+        },
+        {
+          "title": "Caulfield: SIFT (The Four Moves)",
+          "url": "https://hapgood.us/2019/06/19/sift-the-four-moves/"
+        },
+        {
+          "title": "Internet Archive Help Center: Save Pages in the Wayback Machine",
+          "url": "https://help.archive.org/help/save-pages-in-the-wayback-machine/"
+        },
+        {
+          "title": "Google Search Help: Search with an image on Google",
+          "url": "https://support.google.com/websearch/answer/1325808"
+        },
+        {
+          "title": "Content Authenticity Initiative: How it works (Content Credentials)",
+          "url": "https://contentauthenticity.org/how-it-works"
+        }
+      ]
+    },
+    {
+      "group": "المعرِّفات والسجلات العلمية والأوراق المسحوبة",
+      "items": [
+        {
+          "title": "DOI Foundation: What is a DOI?",
+          "url": "https://www.doi.org/the-identifier/what-is-a-doi/"
+        },
+        {
+          "title": "Crossref: Retraction Watch (documentation)",
+          "url": "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/"
+        },
+        {
+          "title": "Crossref: News: Crossref and Retraction Watch (2023)",
+          "url": "https://www.crossref.org/blog/news-crossref-and-retraction-watch/"
+        },
+        {
+          "title": "OpenAlex",
+          "url": "https://openalex.org/"
+        },
+        {
+          "title": "Zotero: Retracted item notifications with Retraction Watch integration",
+          "url": "https://www.zotero.org/blog/retracted-item-notifications/"
+        }
+      ]
+    },
+    {
+      "group": "أدوات البحث والدفاتر",
+      "items": [
+        {
+          "title": "Gemini Notebook Help: Frequently asked questions",
+          "url": "https://support.google.com/notebooklm/answer/16269187"
+        },
+        {
+          "title": "Gemini Notebook Help: Learn about Gemini Notebook's plans",
+          "url": "https://support.google.com/notebooklm/answer/16213268"
+        },
+        {
+          "title": "Open WebUI: Knowledge Bases and Document Chat",
+          "url": "https://docs.openwebui.com/features/workspace/knowledge/"
+        },
+        {
+          "title": "Open Deep Research (langchain-ai): an open source deep research agent",
+          "url": "https://github.com/langchain-ai/open_deep_research"
+        },
+        {
+          "title": "GPT Researcher (assafelovic): an open source deep research agent",
+          "url": "https://github.com/assafelovic/gpt-researcher"
+        }
+      ]
+    },
+    {
+      "group": "السجلات الحقيقية التي يدقَّق عليها المختبر 2.1",
+      "items": [
+        {
+          "title": "Colchero, Popkin, Rivera, Ng: Beverage purchases from stores in Mexico under the excise tax on sugar sweetened beverages (BMJ, 2016)",
+          "url": "https://doi.org/10.1136/bmj.h6704"
+        },
+        {
+          "title": "Teng et al.: Impact of sugar-sweetened beverage taxes on purchases and dietary intake: systematic review and meta-analysis (Obesity Reviews, 2019)",
+          "url": "https://doi.org/10.1111/obr.12868"
+        },
+        {
+          "title": "Alsukait, Wilde, Bleich, Singh, Folta: Evaluating Saudi Arabia's 50% carbonated drink excise tax (Economics and Human Biology, 2020)",
+          "url": "https://doi.org/10.1016/j.ehb.2020.100868"
+        },
+        {
+          "title": "Muckelbauer et al.: Promotion and provision of drinking water in schools for overweight prevention (Pediatrics, 2009)",
+          "url": "https://doi.org/10.1542/peds.2008-2186"
+        },
+        {
+          "title": "Schwartz, Leardo, Aneja, Elbel: Effect of a School-Based Water Intervention on Child Body Mass Index and Obesity (JAMA Pediatrics, 2016)",
+          "url": "https://doi.org/10.1001/jamapediatrics.2015.3778"
+        },
+        {
+          "title": "Wansink, Just, Payne: Can Branding Improve School Lunches? (2012, retracted in 2017)",
+          "url": "https://doi.org/10.1001/archpediatrics.2012.999"
+        },
+        {
+          "title": "Micha et al.: Effectiveness of school food environment policies on children's dietary behaviors (PLOS ONE, 2018)",
+          "url": "https://doi.org/10.1371/journal.pone.0194555"
+        },
+        {
+          "title": "Taber, Chriqui, Powell, Chaloupka: Banning all sugar-sweetened beverages in middle schools (Archives of Pediatrics and Adolescent Medicine, 2012)",
+          "url": "https://doi.org/10.1001/archpediatrics.2011.200"
+        },
+        {
+          "title": "Colchero, Rivera-Dommarco, Popkin, Ng: In Mexico, Evidence Of Sustained Consumer Response Two Years After Implementing A Sugar-Sweetened Beverage Tax (Health Affairs, 2017)",
+          "url": "https://doi.org/10.1377/hlthaff.2016.1231"
+        },
+        {
+          "title": "World Health Organization: Guideline: sugars intake for adults and children (2015)",
+          "url": "https://www.who.int/publications/i/item/9789241549028"
+        },
+        {
+          "title": "World Health Organization: WHO calls on countries to reduce sugars intake among adults and children (news release, 2015)",
+          "url": "https://www.who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children"
+        }
+      ]
+    },
+    {
+      "group": "المرجعيات الوطنية",
+      "items": [
+        {
+          "title": "مبادئ الذكاء الاصطناعي التوليدي للجهات الحكومية (سدايا)",
+          "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenAIGuidelinesForGovernmentARCompressed.pdf"
+        },
+        {
+          "title": "مبادئ الذكاء الاصطناعي التوليدي للعموم (سدايا)",
+          "url": "https://sdaia.gov.sa/ar/SDAIA/about/Files/GenerativeAIPublicAR.pdf"
+        },
+        {
+          "title": "مبادئ أخلاقيات الذكاء الاصطناعي (سدايا)",
+          "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/ai-principles.pdf"
+        },
+        {
+          "title": "سياسة تصنيف البيانات (مكتب إدارة البيانات الوطنية)",
+          "url": "https://sdaia.gov.sa/ar/SDAIA/about/Documents/DataClassificationPolicyAr.pdf"
+        },
+        {
+          "title": "صفحة الأنظمة والسياسات في موقع سدايا",
+          "url": "https://sdaia.gov.sa/ar/SDAIA/about/Pages/RegulationsAndPolicies.aspx"
+        }
+      ]
+    }
+  ]
 }
