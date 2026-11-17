@@ -1,0 +1,166 @@
+[
+  {
+    "n": 1,
+    "doi": "10.1136/bmj.h6704",
+    "url": null,
+    "record": {
+      "title": "Beverage purchases from stores in Mexico under the excise tax on sugar sweetened beverages: observational study",
+      "first": "Colchero",
+      "journal": "BMJ",
+      "year": 2016
+    },
+    "fault": null,
+    "verdict": "سليم",
+    "decision": "يُعتمد، ويُكتب «ارتبطت الضريبة بـ» لأن الدراسة رصدية"
+  },
+  {
+    "n": 2,
+    "doi": "10.1111/obr.12868",
+    "url": null,
+    "record": {
+      "title": "Impact of sugar-sweetened beverage taxes on purchases and dietary intake: Systematic review and meta-analysis",
+      "first": "Teng",
+      "journal": "Obesity Reviews",
+      "year": 2019
+    },
+    "fault": "رقم محرَّف",
+    "verdict": "معيب: الدعم",
+    "decision": "يُصحَّح الرقم إلى 10.0% مع فترة الثقة"
+  },
+  {
+    "n": 3,
+    "doi": "10.1016/j.ehb.2020.100868",
+    "url": null,
+    "record": {
+      "title": "Evaluating Saudi Arabia’s 50% carbonated drink excise tax: Changes in prices and volume sales",
+      "first": "Alsukait",
+      "journal": "Economics & Human Biology",
+      "year": 2020
+    },
+    "fault": null,
+    "verdict": "سليم",
+    "decision": "يُعتمد"
+  },
+  {
+    "n": 4,
+    "doi": "10.1542/peds.2008-2186",
+    "url": null,
+    "record": {
+      "title": "Promotion and Provision of Drinking Water in Schools for Overweight Prevention: Randomized, Controlled Cluster Trial",
+      "first": "Muckelbauer",
+      "journal": "Pediatrics",
+      "year": 2009
+    },
+    "fault": null,
+    "verdict": "سليم",
+    "decision": "يُعتمد، مع ذكر أن استهلاك العصائر لم يتغير"
+  },
+  {
+    "n": 5,
+    "doi": "10.1001/jamapediatrics.2015.3778",
+    "url": null,
+    "record": {
+      "title": "Effect of a School-Based Water Intervention on Child Body Mass Index and Obesity",
+      "first": "Schwartz",
+      "journal": "JAMA Pediatrics",
+      "year": 2016
+    },
+    "fault": null,
+    "verdict": "سليم",
+    "decision": "يُعتمد"
+  },
+  {
+    "n": 6,
+    "doi": "10.1001/archpediatrics.2012.999",
+    "url": null,
+    "record": {
+      "title": "RETRACTED: Can Branding Improve School Lunches?",
+      "first": "Wansink",
+      "journal": "Archives of Pediatrics & Adolescent Medicine",
+      "year": 2012,
+      "retracted": true
+    },
+    "fault": "ورقة مسحوبة",
+    "verdict": "معيب: النسبة",
+    "decision": "يُحذف الادعاء: لا يُستشهد بورقة مسحوبة دليلًا"
+  },
+  {
+    "n": 7,
+    "doi": "10.1371/journal.pone.0194555",
+    "url": null,
+    "record": {
+      "title": "Effectiveness of school food environment policies on children’s dietary behaviors: A systematic review and meta-analysis",
+      "first": "Micha",
+      "journal": "PLOS ONE",
+      "year": 2018
+    },
+    "fault": "نسبة خاطئة: المؤلف الأول والمجلة",
+    "verdict": "معيب: النسبة",
+    "decision": "يُصحَّح الاستشهاد إلى Micha وزملائها في PLOS ONE، والادعاء يبقى"
+  },
+  {
+    "n": 8,
+    "doi": "10.1016/j.jsnh.2021.03.014",
+    "url": null,
+    "record": null,
+    "fault": "مرجع مختلق",
+    "verdict": "معيب: الوجود",
+    "decision": "يُحذف الادعاء ومرجعه"
+  },
+  {
+    "n": 9,
+    "doi": "10.1001/archpediatrics.2011.200",
+    "url": null,
+    "record": {
+      "title": "Banning All Sugar-Sweetened Beverages in Middle Schools",
+      "first": "Taber",
+      "journal": "Archives of Pediatrics & Adolescent Medicine",
+      "year": 2012
+    },
+    "fault": "المصدر يقول عكس الادعاء",
+    "verdict": "معيب: الدعم",
+    "decision": "يُعاد كتابة الادعاء: قلّ الوصول والشراء داخل المدرسة، ولم يقل الاستهلاك الكلي"
+  },
+  {
+    "n": 10,
+    "doi": null,
+    "url": "https://www.who.int/publications/i/item/9789241549028",
+    "record": {
+      "title": "Guideline: sugars intake for adults and children",
+      "first": "World Health Organization",
+      "journal": "WHO",
+      "year": 2015
+    },
+    "fault": "اقتباس لا يوجد في المصدر",
+    "verdict": "معيب: الدعم",
+    "decision": "يُحذف الاقتباس، ويُكتب ما توصي به المنظمة فعلًا"
+  },
+  {
+    "n": 11,
+    "doi": "10.1136/bmj.j1123",
+    "url": null,
+    "record": {
+      "title": "Half of NHS doctors trained in other EU countries are considering quitting UK, warns GMC",
+      "first": "O’Dowd",
+      "journal": "BMJ",
+      "year": 2017
+    },
+    "fault": "مرجع مركَّب: مؤلفون حقيقيون وعنوان مختلق ومعرِّف لمقال آخر",
+    "verdict": "معيب: الوجود",
+    "decision": "يُحذف، أو يُستبدل بالمقال الحقيقي بعد قراءته وإعادة كتابة الادعاء"
+  },
+  {
+    "n": 12,
+    "doi": null,
+    "url": "https://www.who.int/news/item/04-03-2015-who-calls-on-countries-to-reduce-sugars-intake-among-adults-and-children",
+    "record": {
+      "title": "WHO calls on countries to reduce sugars intake among adults and children",
+      "first": "World Health Organization",
+      "journal": "WHO",
+      "year": 2015
+    },
+    "fault": null,
+    "verdict": "سليم",
+    "decision": "يُعتمد، ويُذكر أن النص مترجم"
+  }
+]

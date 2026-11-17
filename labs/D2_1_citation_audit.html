@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · تدقيق اثني عشر استشهادًا · البحث والتحقق بالذكاء الاصطناعي</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_citation_audit.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>تدقيق اثني عشر استشهادًا</h1>
+<p>تدقّق الاستشهادات الاثني عشر في إجابة «مُنقِّب» على السجلات العلمية الحقيقية: هل يوجد المصدر، وهل النسبة صحيحة، وهل يدعم الادعاء</p>
+<div class="meta"><span>25 دقيقة</span><span>اليوم 2</span><span>الجلسة 1: استشهادات موجودة وتقول ما نُسب إليها</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>جدول تدقيق لاثني عشر استشهادًا في إجابة «مُنقِّب»: لكل استشهاد ثلاثة اختبارات وقرار. هذا دليل الناتج الرابع: أن تؤشر على كل خطأ مزروع.</li>
+    <li>خبرة مباشرة بالسجلات العلمية الحقيقية: حلّ المعرِّف، والبحث بالعنوان، وحالة السحب.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/answer/ai_answer.md" target="_blank"><b>ai_answer.md</b><span>إجابة «مُنقِّب» عن سؤال المشروبات المحلاة، وفيها اثنا عشر استشهادًا.</span></a>
+  <a href="files/start/citation_audit.csv" download><b>citation_audit.csv</b><span>جدول التدقيق: الادعاء والمرجع جاهزان، وأعمدة الاختبارات فارغة.</span></a>
+  <a href="files/answer/lookup_snapshot.md" target="_blank"><b>lookup_snapshot.md</b><span>البديل حين لا تتاح الشبكة: ما أعادته السجلات عن كل مرجع، محفوظًا بتاريخه.</span></a>
+</div>
+<p class="small">هذا المختبر في <b>الويب الحقيقي</b>: المراجع الحقيقية في الإجابة تُفحص على سجلاتها الحقيقية. تحتاج إلى متصفح يصل إلى <span class="en">doi.org</span>، وإلى فهرس للأبحاث مثل <span class="en">Crossref</span> أو <span class="en">OpenAlex</span> أو <span class="en">Google Scholar</span>. يجوز أن تستعين بمساعد، وكل ما يقوله يُفحص مثل غيره.</p>
+
+<table>
+  <tr><th>الاختبار</th><th>السؤال</th><th>كيف</th></tr>
+  <tr><td>1 · الوجود</td><td>هل يوجد عمل بهذا العنوان؟</td><td>حلّ المعرِّف في <span class="en">doi.org</span>، أو ابحث بالعنوان كاملًا في فهرس</td></tr>
+  <tr><td>2 · النسبة</td><td>هل المؤلفون والمجلة والسنة كما كُتبت؟ وهل سُحب العمل؟</td><td>طابق السجل بما كتبته الإجابة، وانظر علامة السحب</td></tr>
+  <tr><td>3 · الدعم</td><td>هل يقول المصدر ما نُسب إليه؟</td><td>اقرأ الملخص أو الصفحة: الرقم، ودرجة اليقين، ونص الاقتباس</td></tr>
+</table>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · اقرأ الإجابة وافتح الجدول <span class="min">3 دقائق</span></h3>
+  <p>اقرأ الإجابة مرة واحدة. كم استشهادًا تظنه معيبًا؟ اكتب تخمينك أعلى الجدول قبل أن تبدأ.</p>
+</div>
+
+<div class="step">
+  <h3>2 · اختبار الوجود <span class="min">8 دقائق</span></h3>
+  <p>لكل مرجع فيه معرِّف رقمي: اكتب في المتصفح <code>https://doi.org/</code> متبوعًا بالمعرِّف. ماذا فتح؟ اكتب في الجدول عنوان ما فتح، لا «يعمل».</p>
+  <p>ما لا ينحلّ معرِّفه، أو انحلّ إلى عمل آخر: ابحث عن عنوانه كاملًا بين علامتي تنصيص في فهرس للأبحاث.</p>
+</div>
+
+<div class="step">
+  <h3>3 · اختبار النسبة <span class="min">5 دقائق</span></h3>
+  <p>لما وُجد: طابق المؤلف الأول والمجلة والسنة. ثم انظر في السجل: هل يبدأ العنوان بكلمة <span class="en">RETRACTED</span>، أو هل على الصفحة إشعار سحب؟</p>
+</div>
+
+<div class="step">
+  <h3>4 · اختبار الدعم <span class="min">7 دقائق</span></h3>
+  <p>لما بقي: اقرأ ملخص المقال أو الصفحة، وقارن الادعاء به: هل الرقم نفسه؟ هل درجة اليقين نفسها؟ هل الجملة بين علامتي التنصيص موجودة؟ أحيانًا يكفي العنوان.</p>
+  <div class="prompt" data-tool="مساعد عام · دليل لا حكم">هذا ادعاء وهذا ملخص المصدر الذي استُشهد به. أين في الملخص الجملة التي تدعم الادعاء؟ انسخها كما هي. وإن لم تجد فقل: لا أجد.
+
+<span class="ph">[الادعاء]</span>
+<span class="ph">[الملخص]</span></div>
+</div>
+
+<div class="step">
+  <h3>5 · العدّ والقرار <span class="min">دقيقتان</span></h3>
+  <p>اكتب القرار في كل صف: يُعتمد، أو يُصحَّح، أو يُحذف. عدّ السليم والمعيب، وقارن بتخمينك في الخطوة الأولى.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ تمرين إضافي: مدقق ثانٍ</h3>
+  <p>اطلب من مساعد ثانٍ أن يدقق الاستشهادات الاثني عشر. كم خطأً مزروعًا فاته؟ وهل اختلق تصحيحًا؟</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>كم استشهادًا من الاثني عشر سليم؟ وكم كان تخمينك؟</li>
+  <li>كم استشهادًا كان سيمر لو اكتفيت بسؤال «هل يفتح الرابط؟»</li>
+  <li>أي استشهاد مصدره سليم ومنسوب بدقة، والادعاء لا يطابقه؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرب</summary>
+  <ul>
+    <li>الحل المرجعي: <code>labs/solutions/D2_1_citation_audit.md</code>. الكود يحلّ المعرِّفات على <span class="en">Crossref</span> مباشرة ويقارنها بالسجل المحفوظ: شغّله قبل كل دفعة.</li>
+    <li>السليم 5 (1 و3 و4 و5 و12)، والمعيب 7: الوجود (8 مختلق، و11 مركَّب ينحلّ معرِّفه إلى خبر آخر)، والنسبة (6 مسحوب، و7 مؤلف أول ومجلة خاطئان)، والدعم (2 رقم محرَّف، و9 المصدر يقول العكس، و10 اقتباس ليس في المصدر).</li>
+    <li>لو اكتفينا بأن المعرِّف ينحلّ أو الرابط يفتح لمرّ 11 من 12.</li>
+    <li>الاستشهاد 9 يُكشف من عنوان المقال نفسه. الاستشهاد 7 ادعاؤه صحيح ونسبته خاطئة: يُصحَّح ولا يُحذف.</li>
+    <li>قلها للقاعة صراحة: الأخطاء المزروعة من صنع «مُنقِّب» وحده. مؤلفو الاستشهاد 11 لم يكتبوا العنوان المنسوب إليهم، ومؤلفو الاستشهاد 7 لم يخطئوا في شيء، ومنظمة الصحة العالمية لم تقل جملة الاستشهاد 10. والاستشهاد 6 يُذكر بما في سجله: مقال مسحوب، ولا يُناقش فيه أحد بعينه.</li>
+    <li>عند انقطاع الشبكة: الملف البديل فيه ما أعادته السجلات، وعمود «ما يقوله المصدر» فيه تلخيص بالعربية لا نص المصدر.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D1_4_trace_to_origin.html" rel="prev">→ المختبر السابق</a><a href="D2_2_notebook_setup.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · البحث والتحقق بالذكاء الاصطناعي<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 954cb81</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T13:18:29Z","version":"2027.1.0","commit":"954cb81"},"course":{"id":"use-flu-203","code":"USE-FLU-203","title":"البحث والتحقق بالذكاء الاصطناعي","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-flu-203/","repo":"SDAIAAcademy/use-flu-203","home":"../index.html"},"lab":{"id":"2.1","title":"تدقيق اثني عشر استشهادًا","summary":"تدقّق الاستشهادات الاثني عشر في إجابة «مُنقِّب» على السجلات العلمية الحقيقية: هل يوجد المصدر، وهل النسبة صحيحة، وهل يدعم الادعاء","minutes":25,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_4_trace_to_origin.html","next":"D2_2_notebook_setup.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
